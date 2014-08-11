@@ -252,7 +252,7 @@ h2 a {
 #meta {}
 .postmetadata {}
 #respond {}
-#sidebar {}
+#sidebar { position: relative; }
 .navigation {}
 .next-posts {}
 .prev-posts {}
@@ -558,7 +558,17 @@ ol.commentlist li.thread-odd {}
 
 .widget .widget_sp_image-image-link {
     margin-bottom: 15px;
-    display: block;
+    display: inline-block;
+}
+#primary-sidebar-one {
+    display: inline-block;
+    width: 100%;
+}
+#primary-sidebar-one .widget {
+
+}
+#primary-sidebar-one .widget_sp_image-image-link {
+
 }
 .simple-links-list a { display:inline-block; }
 .simple-links-list .attachment-thumbnail {
@@ -725,6 +735,13 @@ ol.commentlist li.thread-odd {}
     .post-head img.wp-post-image { width: 100%; }
     #popular-stories { display: none; }
     .contain-to-grid .top-bar { max-width: 52.5em; }
+
+    #primary-sidebar-one .widget_sp_image-image-link {
+        display: inline-block;
+        float: left;
+        padding: 0 5px;
+        width: 33%;
+    }
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /* Large screens */

@@ -12,14 +12,14 @@
     <div id="sidebar" role="secondary">
         <div id="sidebar-search"><!--Start Search Component-->
             <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-                <input type="search" class="search-field rounded" placeholder="" value="" name="s" title="Search for:" />
+                <input type="text" class="search-field rounded" placeholder="" value="" name="s" title="Search for:" />
                 <input type="submit" class="search-submit rounded" value="Search" />
             </form>
         </div><!--End Search Component-->
         <div id="post-tabs"><!--Start Post Dual Box-->
             <ul class="tabs" data-tab>
-                <li class="tab-title active"><a href="#panel2-1" data-options="disable_for_touch:false">Popular Posts</a></li>
-                <li class="tab-title"><a href="#panel2-2" data-options="disable_for_touch:false">Recent Posts</a></li>
+                <li class="tab-title active"><a href="#panel2-1">Popular Posts</a></li>
+                <li class="tab-title"><a href="#panel2-2">Recent Posts</a></li>
             </ul>
             <div class="tabs-content">
                 <div class="content active" id="panel2-1">
@@ -36,26 +36,26 @@
         </div><!--End Post Dual Box-->
 
         <?php if ( is_active_sidebar( 'sidebar-1' ) /*&& ! is_single()*/ ) : ?>
-            <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+            <div id="primary-sidebar-one" class="primary-sidebar widget-area" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
             </div><!-- #primary-sidebar-1 -->
         <?php endif; ?>
 
         <?php if ( is_active_sidebar( 'sidebar-2' ) /*&& is_single()*/  ) : ?>
-            <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+            <div id="primary-sidebar-two" class="primary-sidebar widget-area" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-2' ); ?>
             </div><!-- #primary-sidebar-2 -->
         <?php endif; ?>
 
         <br />
         <!--Start Archive Dropdown-->
-        <a href="#" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="drop-arc" data-options="disable_for_touch:false">Archives</a>
+        <a href="#" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="drop-arc">Archives</a>
         <ul id="drop-arc" class="content small f-dropdown" data-dropdown-content>
             <?php wp_get_archives(); ?>
         </ul>        <!--End Archive Dropdown-->
 
         <!--Start Category Dropdown-->
-        <a href="#" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="drop-cat" data-options="disable_for_touch:false">Categories</a>
+        <a href="#" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="drop-cat">Categories</a>
         <ul id="drop-cat" class="content small f-dropdown" data-dropdown-content>
             <?php wp_list_categories('title_li='); ?>
         </ul>        <!--End Category Dropdown-->

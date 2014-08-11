@@ -78,7 +78,7 @@ endif;
                             <!--<br>-->
 
                             <div class="smbox">
-                                <label for="email" class="mail">E-mail<?php if ($req) echo " (required)"; ?> <small>(will not be published!)</small></label>
+                                <label for="email" class="mail">E-mail<?php if ($req) echo " (required)"; ?></label>
                                 <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="" tabindex="2"<?php if ($req) echo ' aria-required=""true"'; ?> class="basicinput">
                             </div>
 
