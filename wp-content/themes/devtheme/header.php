@@ -49,8 +49,58 @@
             </div>
 
             <!-- Start Mobile Only Header -->
+            <script type="text/javascript">
+                jQuery(function($){
+                    $( '.menu-btn' ).click(function(){
+                        $('.responsive-menu').addClass('expand')
+                        $('.menu-btn').addClass('btn-none')
+                    })
+
+                    $( '.close-btn' ).click(function(){
+                        $('.responsive-menu').removeClass('expand')
+                        $('.menu-btn').removeClass('btn-none')
+                    })
+                })
+            </script>
             <div id="mobile-header" class="small-12 show-for-small-only columns">
-                <img id="mobile-logo" src="<?php echo get_template_directory_uri(); ?>/img/ees_hdr_grfx_logo.png">
+                <a><img id="nav-hb" class="menu-btn" src="<?php echo get_template_directory_uri(); ?>/img/ees_hdr_grfx_hbr_blue.png"></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="mobile-logo" src="<?php echo get_template_directory_uri(); ?>/img/ees_hdr_grfx_logo.png"></a>
+            </div>
+            <div id="mobile-menu" class="phone-menu responsive-menu">
+                <div class="phone-menu-top">
+                    <a><img id="nav-alt-hb" class="close-btn" src="<?php echo get_template_directory_uri(); ?>/img/ees_hdr_grfx_hbr_white.png"></a>
+                    <?php $custom_option = get_option('custom_option_name');
+                    echo '<div style="margin-left:90px;">';
+                    echo '<a href="'.$custom_option['fb_link'].'" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_ico_smw_fb.png"></a>&nbsp;';
+                    echo '<a href="'.$custom_option['tw_link'].'" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_ico_smw_tw.png"></a>&nbsp;';
+                    echo '<a href="'.$custom_option['gp_link'].'" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_ico_smw_gp.png"></a>&nbsp;';
+                    echo '<a href="'.$custom_option['li_link'].'" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_ico_smw_li.png"></a>';
+                    echo '</div>'; ?>
+                </div>
+                <div class="phone-menu-main">
+                    <h5><img src="<?php echo get_template_directory_uri() ?>/img/ees_grfx_logo_wtiny.png"> Categories</h5>
+                    <?php
+                    $defaults = array(
+                        'theme_location'  => 'primary',
+                        'menu'            => 'main-menu',
+                        'container'       => false,
+                        'fallback_cb'     => 'wp_page_menu',
+                        'items_wrap'      => '<ul>%3$s</ul>',
+                        'depth'           => 3
+                    );
+                    wp_nav_menu( $defaults );
+                    ?>
+                    <h5><img src="<?php echo get_template_directory_uri() ?>/img/ees_grfx_logo_wtiny.png"> Site Sponsor</h5>
+                    <ul>
+                        <li><a href="http://madico.com" target="_blank">About Madico Window Film</a></li>
+                    </ul>
+                    <h5><img src="<?php echo get_template_directory_uri() ?>/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h5>
+                    <ul>
+                        <li><a href="http://madico.know-where.com/madico/" target="_blank">Madico Window Films</a></li>
+                        <li><a href="http://www.sun-gard.com/where-to-buy" target="_blank">Sun-Gard Window Films</a></li>
+                        <li><a href="http://www.sunscapefilms.com/dealer-listings" target="_blank">Sunscape Window Films</a></li>
+                    </ul>
+                </div>
             </div>
             <!-- End Mobile Only Header -->
 
@@ -58,7 +108,7 @@
     </div>
 </header>
 
-<div id="nav-container-row" class="contain-to-grid">
+<div id="nav-container-row" class="contain-to-grid show-for-medium-up">
     <div id="nav-container-head" class="small-12 columns">
         <nav class="top-bar" data-topbar>
             <ul class="title-area">
