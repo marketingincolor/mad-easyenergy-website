@@ -24,7 +24,7 @@
             <div class="tabs-content">
                 <div class="content active" id="panel2-1">
                     <p>
-                        <?php echo do_shortcode('[display-posts image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="comment_count" posts_per_page="8"]');?>
+                        <?php echo do_shortcode('[display-posts image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="comment_count" order="DESC" posts_per_page="8"]');?>
                     </p>
                 </div>
                 <div class="content" id="panel2-2">
@@ -41,6 +41,12 @@
             </div><!-- #primary-sidebar-1 -->
         <?php endif; ?>
 
+        <?php if ( is_active_sidebar( 'sidebar-4' ) /*&& ! is_single()*/ ) : ?>
+            <div id="primary-sidebar-four" class="primary-sidebar widget-area" role="complementary">
+                <?php dynamic_sidebar( 'sidebar-4' ); ?>
+            </div><!-- #primary-sidebar-4 -->
+        <?php endif; ?>
+
         <?php if ( is_active_sidebar( 'sidebar-2' ) /*&& is_single()*/  ) : ?>
             <div id="primary-sidebar-two" class="primary-sidebar widget-area" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-2' ); ?>
@@ -48,18 +54,44 @@
         <?php endif; ?>
 
         <br />
+        <!--Start Dropdowns-->
+
+        <dl class="accordion" data-accordion>
+            <dd class="accordion-navigation">
+                <a href="#arch1a" class="trigger">Archives</a>
+                <div id="arch1a" class="content">
+                    <?php wp_get_archives(); ?>
+                </div>
+            </dd>
+            <dd>&nbsp;</dd>
+            <dd class="accordion-navigation">
+                <a href="#arch2a" class="trigger">Categories</a>
+                <div id="arch2a" class="content">
+                    <?php wp_list_categories('title_li='); ?>
+                </div>
+            </dd>
+        </dl>       <!--End Dropdowns-->
+
         <!--Start Archive Dropdown-->
-        <a href="#" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="drop-arc">Archives</a>
+        <!--<a href="#" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="drop-arc">Archives</a>
         <ul id="drop-arc" class="content small f-dropdown" data-dropdown-content>
-            <?php wp_get_archives(); ?>
-        </ul>        <!--End Archive Dropdown-->
+            <?php //wp_get_archives(); ?>
+        </ul>-->       <!--End Archive Dropdown-->
+
 
         <!--Start Category Dropdown-->
-        <a href="#" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="drop-cat">Categories</a>
+        <!--<a href="#" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="drop-cat">Categories</a>
         <ul id="drop-cat" class="content small f-dropdown" data-dropdown-content>
-            <?php wp_list_categories('title_li='); ?>
-        </ul>        <!--End Category Dropdown-->
+            <?php //wp_list_categories('title_li='); ?>
+        </ul>-->        <!--End Category Dropdown-->
         <br />
 
     </div>
+</div>
+<div id="mobile-video" class="small show-for-small-only">
+    <?php if ( is_active_sidebar( 'sidebar-4' ) /*&& ! is_single()*/ ) : ?>
+        <div id="primary-sidebar-four" class="primary-sidebar widget-area" role="complementary">
+            <?php dynamic_sidebar( 'sidebar-4' ); ?>
+        </div><!-- #primary-sidebar-1 -->
+    <?php endif; ?>
 </div>

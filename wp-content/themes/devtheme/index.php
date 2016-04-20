@@ -94,7 +94,7 @@ get_header(); ?>
             <?php do_action( 'mobile_advert_insert', '1' ); ?>
             <?php echo do_shortcode('[display-posts image_size="thumbnail" orderby="comment_count" posts_per_page="4"]');?>
             <?php do_action( 'mobile_advert_insert', '2' ); ?>
-            <?php echo do_shortcode('[display-posts image_size="thumbnail" orderby="date" posts_per_page="4" offset="3"]');?>
+            <?php echo do_shortcode('[display-posts image_size="thumbnail" orderby="date" offset="3"]');?>
         </div>
         <!-- End Mobile Only Body -->
 

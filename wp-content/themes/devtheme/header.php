@@ -42,7 +42,7 @@
                 <?php do_action( 'social_icons', 'header' ); ?>
                 <a href="#" id="find-a-dealer" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="find-drop">Find A Madico Window Film Dealer</a>
                 <ul id="find-drop" class="content small f-dropdown" data-dropdown-content>
-                    <li><a href="http://madico.know-where.com/madico/" target="_blank">Madico Window Films</a></li>
+                    <li><a href="http://www.madico.com/window-film/distribution/" target="_blank">Madico Window Films</a></li>
                     <li><a href="http://www.sun-gard.com/where-to-buy" target="_blank">Sun-Gard Window Films</a></li>
                     <li><a href="http://www.sunscapefilms.com/dealer-listings" target="_blank">Sunscape Window Films</a></li>
                 </ul>
@@ -96,9 +96,14 @@
                     </ul>
                     <h5><img src="<?php echo get_template_directory_uri() ?>/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h5>
                     <ul>
-                        <li><a href="http://madico.know-where.com/madico/" target="_blank">Madico Window Films</a></li>
+                        <li><a href="http://www.madico.com/window-film/distribution/" target="_blank">Madico Window Films</a></li>
                         <li><a href="http://www.sun-gard.com/where-to-buy" target="_blank">Sun-Gard Window Films</a></li>
                         <li><a href="http://www.sunscapefilms.com/dealer-listings" target="_blank">Sunscape Window Films</a></li>
+                    </ul>
+
+                    <ul>
+                        <li>Copyright &copy;<?php echo date("Y") ?> Madico, Inc.&nbsp;</li>
+                        <li><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>

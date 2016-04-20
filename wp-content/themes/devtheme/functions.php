@@ -78,6 +78,15 @@ function devtheme_widgets_init() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>'
     ));
+    register_sidebar(array(
+        'name' => __( 'Video Sidebar', 'devtheme' ),
+        'id' => 'sidebar-4',
+        'description' => __( 'Special video content for site', 'devtheme' ),
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ));
 }
 add_action( 'widgets_init', 'devtheme_widgets_init' );
 
@@ -103,7 +112,7 @@ add_action( 'social_icons', 'display_social_media_icons', 10, 1 );
 
 //Create custom display for Display area links
 function display_area_dealer_links() {
-    echo 'Find <a href="http://madico.know-where.com/madico/" target="_blank">Madico</a>,'
+    echo 'Find <a href="http://www.madico.com/window-film/distribution/" target="_blank">Madico</a>,'
     .' <a href="http://sun-gard.com/where-to-buy" target="_blank">Sun-Gard</a>,'
     .' and <a href="http://sunscapefilms.com/dealer-listings" target="_blank">Sunscape Window Film</a>'
     .' dealers in your area.';
@@ -116,7 +125,7 @@ function display_mobile_advert_insert( $pagelocation ){
     if ($pagelocation == '1') {
         echo '<div id="mobile-adv" class="mob-adv">'
             .'<h6><img src="'. get_template_directory_uri(). '/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h6>'
-            .'<a class="a-mob-adv" href="http://madico.know-where.com/madico/" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_mad.png"></a>'
+            .'<a class="a-mob-adv" href="http://www.madico.com/window-film/distribution/" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_mad.png"></a>'
             .'<a class="a-mob-adv" href="http://sun-gard.com/where-to-buy" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_sgd.png"></a>'
             .'<a class="a-mob-adv" href="http://sunscapefilms.com/dealer-listings" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_ssp.png"></a>'
         .'</div>';
@@ -124,7 +133,7 @@ function display_mobile_advert_insert( $pagelocation ){
     elseif ($pagelocation == '2') {
         echo '<div id="mobile-adv" class="mob-adv">'
             .'<h6><img src="'. get_template_directory_uri(). '/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h6>'
-            .'<a class="a-mob-adv" href="http://madico.know-where.com/madico/" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_mad.png"></a>'
+            .'<a class="a-mob-adv" href="http://www.madico.com/window-film/distribution/" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_mad.png"></a>'
             .'<a class="a-mob-adv" href="http://sun-gard.com/where-to-buy" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_sgd.png"></a>'
             .'<a class="a-mob-adv" href="http://sunscapefilms.com/dealer-listings" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_ssp.png"></a>'
             .'</div>';

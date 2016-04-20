@@ -41,11 +41,12 @@ get_header(); ?>
                             <div class="show-for-medium-down" style="margin-top:10px;">
                                 <?php dd_twitter_generate('Compact','twitter_username') ?>
                                 <?php dd_fblike_generate('Like Button Count') ?>
+								<?php dd_fbshare_generate('Compact') ?> 
                                 <?php dd_google1_generate('Compact') ?>
                                 <?php dd_linkedin_generate('Compact') ?>
                             </div>
 
-                            <span class="sub-text show-for-large-up">
+                            <span class="sub-text" style="display:inline-block; margin-top:10px;">
                                 <?php do_action( 'sm_dlr_text' ); ?>
                             </span>
                         </div>
