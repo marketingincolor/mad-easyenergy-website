@@ -16,6 +16,13 @@
                 <input type="submit" class="search-submit rounded" value="Search" />
             </form>
         </div><!--End Search Component-->
+
+        <?php if ( is_active_sidebar( 'sidebar-1' ) /*&& ! is_single()*/ ) : ?>
+            <div id="primary-sidebar-one" class="primary-sidebar widget-area" role="complementary">
+                <?php dynamic_sidebar( 'sidebar-1' ); ?>
+            </div><!-- #primary-sidebar-1 -->
+        <?php endif; ?>
+
         <div id="post-tabs"><!--Start Post Dual Box-->
             <ul class="tabs" data-tab>
                 <li class="tab-title active"><a href="#panel2-1">Popular Posts</a></li>
@@ -34,12 +41,6 @@
                 </div>
             </div>
         </div><!--End Post Dual Box-->
-
-        <?php if ( is_active_sidebar( 'sidebar-1' ) /*&& ! is_single()*/ ) : ?>
-            <div id="primary-sidebar-one" class="primary-sidebar widget-area" role="complementary">
-                <?php dynamic_sidebar( 'sidebar-1' ); ?>
-            </div><!-- #primary-sidebar-1 -->
-        <?php endif; ?>
 
         <?php if ( is_active_sidebar( 'sidebar-4' ) /*&& ! is_single()*/ ) : ?>
             <div id="primary-sidebar-four" class="primary-sidebar widget-area" role="complementary">
