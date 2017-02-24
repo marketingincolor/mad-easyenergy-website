@@ -112,10 +112,11 @@ add_action( 'social_icons', 'display_social_media_icons', 10, 1 );
 
 //Create custom display for Display area links
 function display_area_dealer_links() {
-    echo 'Find <a href="http://www.madico.com/window-film/distribution/" target="_blank">Madico</a>,'
-    .' <a href="http://sun-gard.com/where-to-buy" target="_blank">Sun-Gard</a>,'
-    .' and <a href="http://sunscapefilms.com/dealer-listings" target="_blank">Sunscape Window Film</a>'
-    .' dealers in your area.';
+    //echo 'Find <a href="http://www.madico.com/window-film/distribution/" target="_blank">Madico</a>,'
+    //.' <a href="http://sun-gard.com/where-to-buy" target="_blank">Sun-Gard</a>,'
+    //.' and <a href="http://sunscapefilms.com/dealer-listings" target="_blank">Sunscape Window Film</a>'
+    //.' dealers in your area.';
+    echo 'Find a Madico dealer <a href="http://dealerdirectory.madico.com" target="_blank">in your area</a>.';
 }
 add_action( 'sm_dlr_text', 'display_area_dealer_links', 10 );
 
