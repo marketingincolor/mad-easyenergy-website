@@ -40,12 +40,12 @@
             </div>
             <div id="social-container" class="large-6 medium-6 columns show-for-medium-up">
                 <?php do_action( 'social_icons', 'header' ); ?>
-                <a href="#" id="find-a-dealer" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="find-drop">Find A Madico Window Film Dealer</a>
+                <!--<a href="#" id="find-a-dealer" class="button tiny secondary radius dropdown custom-dropdown" data-dropdown="find-drop">Find A Madico Window Film Dealer</a>
                 <ul id="find-drop" class="content small f-dropdown" data-dropdown-content>
                     <li><a href="http://www.madico.com/window-film/distribution/" target="_blank">Madico Window Films</a></li>
                     <li><a href="http://www.sun-gard.com/where-to-buy" target="_blank">Sun-Gard Window Films</a></li>
                     <li><a href="http://www.sunscapefilms.com/dealer-listings" target="_blank">Sunscape Window Films</a></li>
-                </ul>
+                </ul>-->
             </div>
 
             <!-- Start Mobile Only Header -->
