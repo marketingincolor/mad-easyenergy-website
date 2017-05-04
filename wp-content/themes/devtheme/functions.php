@@ -120,6 +120,14 @@ function display_area_dealer_links() {
 }
 add_action( 'sm_dlr_text', 'display_area_dealer_links', 10 );
 
+function dealer_after_post_content($content) {
+    if ( in_category( 'window-film' ) ) { 
+        $content .= '<p>Find a Madico dealer <a href="http://dealerdirectory.madico.com" target="_blank">in your area</a>.</p>';
+    }
+        return $content;
+}
+add_filter( 'the_content', 'dealer_after_post_content' );
+
 //Create custom display for Mobile Adverts.
 function display_mobile_advert_insert( $pagelocation ){
 
