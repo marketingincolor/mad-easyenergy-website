@@ -133,18 +133,20 @@ function display_mobile_advert_insert( $pagelocation ){
 
     if ($pagelocation == '1') {
         echo '<div id="mobile-adv" class="mob-adv">'
-            .'<h6><img src="'. get_template_directory_uri(). '/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h6>'
-            .'<a class="a-mob-adv" href="http://www.madico.com/window-film/distribution/" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_mad.png"></a>'
-            .'<a class="a-mob-adv" href="http://sun-gard.com/where-to-buy" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_sgd.png"></a>'
-            .'<a class="a-mob-adv" href="http://sunscapefilms.com/dealer-listings" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_ssp.png"></a>'
+            //.'<h6><img src="'. get_template_directory_uri(). '/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h6>'
+            .'<a class="a-mob-adv" href="http://dealerdirectory.madico.com" target="_blank"><img src="http://easyenergysavingtips.com/wp-content/uploads/2017/02/Easy-Energy-Sidebar-Buttons-Dealer-Directory.jpg"></a>'
+            //.'<a class="a-mob-adv" href="http://www.madico.com/window-film/distribution/" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_mad.png"></a>'
+            //.'<a class="a-mob-adv" href="http://sun-gard.com/where-to-buy" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_sgd.png"></a>'
+            //.'<a class="a-mob-adv" href="http://sunscapefilms.com/dealer-listings" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_ssp.png"></a>'
         .'</div>';
     }
     elseif ($pagelocation == '2') {
         echo '<div id="mobile-adv" class="mob-adv">'
-            .'<h6><img src="'. get_template_directory_uri(). '/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h6>'
-            .'<a class="a-mob-adv" href="http://www.madico.com/window-film/distribution/" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_mad.png"></a>'
-            .'<a class="a-mob-adv" href="http://sun-gard.com/where-to-buy" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_sgd.png"></a>'
-            .'<a class="a-mob-adv" href="http://sunscapefilms.com/dealer-listings" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_ssp.png"></a>'
+            //.'<h6><img src="'. get_template_directory_uri(). '/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h6>'
+            .'<a class="a-mob-adv" href="http://dealerdirectory.madico.com" target="_blank"><img src="http://easyenergysavingtips.com/wp-content/uploads/2017/02/Easy-Energy-Sidebar-Buttons-Dealer-Directory.jpg"></a>'
+            //.'<a class="a-mob-adv" href="http://www.madico.com/window-film/distribution/" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_mad.png"></a>'
+            //.'<a class="a-mob-adv" href="http://sun-gard.com/where-to-buy" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_sgd.png"></a>'
+            //.'<a class="a-mob-adv" href="http://sunscapefilms.com/dealer-listings" target="_blank"><img src="'. get_template_directory_uri(). '/img/ees_grfx_mob_btn_ssp.png"></a>'
             .'</div>';
     }
 }
