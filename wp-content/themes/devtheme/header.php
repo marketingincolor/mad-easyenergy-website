@@ -110,9 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </ul>
                     <h5><img src="<?php echo get_template_directory_uri() ?>/img/ees_grfx_logo_wtiny.png"> Find Madico Window Film Dealers</h5>
                     <ul>
-                        <li><a href="http://www.madico.com/window-film/distribution/" target="_blank">Madico Window Films</a></li>
-                        <li><a href="http://www.sun-gard.com/where-to-buy" target="_blank">Sun-Gard Window Films</a></li>
-                        <li><a href="http://www.sunscapefilms.com/dealer-listings" target="_blank">Sunscape Window Films</a></li>
+                        <li><a href="http://dealerdirectory.madico.com/" target="_blank">Find a Madico dealer in your area</a></li>
                     </ul>
 
                     <ul>
