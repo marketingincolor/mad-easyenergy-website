@@ -338,6 +338,8 @@ ol.commentlist li.thread-odd {}
 #find-a-dealer { max-width: 300px; }
 #find-drop { text-align: center; }
 #nav-container-row { margin-bottom: 15px; }
+
+.nav-links a, .nav-links a:hover { color:#f1782f; }
 /**
  * 5.0 Content
  * -----------------------------------------------------------------------------
