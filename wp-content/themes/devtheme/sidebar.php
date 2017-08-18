@@ -8,6 +8,7 @@
  *
  */
 ?>
+
 <div class="large-4 medium-12 show-for-medium-up columns">
     <div id="sidebar" role="secondary">
         <div id="sidebar-search"><!--Start Search Component-->
@@ -23,30 +24,38 @@
             </div><!-- #primary-sidebar-1 -->
         <?php endif; ?>
 
-        <div id="post-tabs"><!--Start Post Dual Box-->
-            <ul class="tabs" data-tab>
-                <li class="tab-title active"><a href="#panel2-1">Popular Posts</a></li>
-                <li class="tab-title"><a href="#panel2-2">Recent Posts</a></li>
-            </ul>
-            <div class="tabs-content">
+        <div id="primary-sidebar-zero" class="primary-sidebar widget-area" role="complementary">
+            <div class="widget">
+                <a href="http://dealerdirectory.madico.com/" target="_blank" class="hvrstate">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/ees_side_grfx_dcta_b.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/ees_side_grfx_dcta_a.jpg">
+                </a>
+            </div>
+        </div><!-- #primary-sidebar-zero -->
+
+        <h3 class="widget-title">Popular Posts</h3>
+        <div id="post-tabs">
+            <div class="pop-content">
                 <div class="content active" id="panel2-1">
-                    <p>
-                        <?php echo do_shortcode('[display-posts image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="comment_count" order="DESC" posts_per_page="8"]');?>
-                    </p>
-                </div>
-                <div class="content" id="panel2-2">
-                    <p>
-                        <?php echo do_shortcode('[display-posts image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="date" posts_per_page="8"]');?>
-                    </p>
+                <?php echo do_shortcode('[display-posts image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="comment_count" order="DESC" posts_per_page="8"]');?>
                 </div>
             </div>
-        </div><!--End Post Dual Box-->
+        </div>
 
         <?php if ( is_active_sidebar( 'sidebar-4' ) /*&& ! is_single()*/ ) : ?>
             <div id="primary-sidebar-four" class="primary-sidebar widget-area" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-4' ); ?>
             </div><!-- #primary-sidebar-4 -->
         <?php endif; ?>
+
+        <h3 class="widget-title">Recent Posts</h3>
+        <div id="post-tabs">
+            <div class="pop-content">
+                <div class="content active" id="panel2-1">
+                <?php echo do_shortcode('[display-posts image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="date" posts_per_page="8"]');?>
+                </div>
+            </div>
+        </div>
 
         <?php if ( is_active_sidebar( 'sidebar-2' ) /*&& is_single()*/  ) : ?>
             <div id="primary-sidebar-two" class="primary-sidebar widget-area" role="complementary">
