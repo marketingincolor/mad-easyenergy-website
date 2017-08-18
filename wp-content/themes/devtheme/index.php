@@ -13,14 +13,17 @@
  * @subpackage Dev Blank
  * @since Dev Blank 0.0
  */
+
+ $args = array(
+    'screen_reader_text' => ' ',
+    'mid_size' => 2,
+    'prev_text' => __( 'Previous', 'textdomain' ),
+    'next_text' => __( 'Next', 'textdomain' )
+); 
+
 get_header(); ?>
     <a id="primary-dd"></a>
         <div class="large-8 medium-12 show-for-medium-up columns">
-            <div class="sponsor small-12">
-                <a href="http://madico.com" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_page_headline.png">
-                </a>
-            </div>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <article id="post-<?php the_ID(); ?>" class="post post-border" role="article">
                     <div class="site-content row">
@@ -68,8 +71,8 @@ get_header(); ?>
             <?php endwhile; ?>
 
                 <div id="popular-stories" class="clearfix">
-                    <h3 class="widget-title">Popular Stories</h3>
-                    <?php echo do_shortcode('[display-posts columns="2" image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="comment_count"]');?>
+                    <!--<h3 class="widget-title">Popular Stories</h3>-->
+                    <?php //echo do_shortcode('[display-posts columns="2" image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="comment_count"]');?>
                 </div>
 
             <?php else : ?>
@@ -83,6 +86,8 @@ get_header(); ?>
                     </section>
                 </article>
             <?php endif; ?>
+
+        <?php the_posts_pagination( $args ); ?>
 
         </div>
 
