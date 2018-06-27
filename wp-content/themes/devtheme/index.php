@@ -60,10 +60,10 @@ get_header(); ?>
                                 ?>
                                 <a href="<?php the_permalink() ?>" rel="bookmark"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_btn_readmore.png"></a>
                             </span>
-                            <h5><a href="http://madico.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_madlogo_sm.png"></a> &nbsp; Sponsored by Madico Window Films</h5>
+                            <!--<h5><a href="http://madico.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_madlogo_sm.png"></a> &nbsp; Sponsored by Madico Window Films</h5>
                             <span class="sub-text">
-                                <?php do_action( 'sm_dlr_text' ); ?>
-                            </span>
+                                <?php //do_action( 'sm_dlr_text' ); ?>
+                            </span>-->
 						</div>
                     </section>
                     </div>
