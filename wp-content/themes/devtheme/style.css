@@ -71,7 +71,8 @@ p {
     margin-bottom: 1.25rem;
     text-rendering: optimizelegibility;
 }
-
+form { margin:0rem 0rem 2rem; }
+h2.screen-reader-text { display: none; }
 .row {
     margin: 0 auto;
     max-width: 1200px; max-width: 75rem; /*changes 62.5em (1000px) to 75em (1200px)*/
@@ -179,8 +180,8 @@ p {
  * -----------------------------------------------------------------------------
  */
 .bgnd {
-    background: url('./img/ees_hdr_grfx_bgnd.png') #D6D6D6 repeat-x scroll top left / auto 118px;
-    height: 118px;
+    background: url('./img/ees_hdr_grfx_bgnd.png') #D6D6D6 repeat-x scroll top left / auto 150px;
+    height: 150px;
 }
 .sponsor {
     display: inline-block;
@@ -327,15 +328,18 @@ ol.commentlist li.thread-odd {}
  * 4.0 Header
  * -----------------------------------------------------------------------------
  */
-#site-title { margin-top: 15px; }
+#site-title { margin-top: 30px; }
+#site-title img { max-height:88px; }
 #social-container {
     margin-top: 1.4em;
     text-align:right;
 }
-#nav-container-head { margin-bottom:15px; }
+#nav-container-head { margin-bottom:35px; }
 #find-a-dealer { max-width: 300px; }
 #find-drop { text-align: center; }
 #nav-container-row { margin-bottom: 15px; }
+
+.nav-links a, .nav-links a:hover { color:#f1782f; }
 /**
  * 5.0 Content
  * -----------------------------------------------------------------------------
@@ -372,7 +376,8 @@ ol.commentlist li.thread-odd {}
     color: #9E9E9E;
     text-decoration: underline;
 }
-.post-border { border-bottom: 1px solid #8A8A8A; }
+.post-border { border-top: 0px solid #8A8A8A; }
+.post-border:first-child{ border-top:0px; }
 .sub-text { font-size: .688rem !important;  }
 .post-content p {
     margin-bottom: 5px;
@@ -537,16 +542,20 @@ ol.commentlist li.thread-odd {}
 .accordion-navigation .trigger, .accordion-navigation .trigger:hover { background-color:#fff !important; }
 .accordion-navigation li { list-style:none; margin:5px 0px; }
 
+.hvrstate img:last-child{display:none}
+.hvrstate:hover img:first-child{display:none}
+.hvrstate:hover img:last-child{display:inline-block}
+
 /**
  * 6.1 Widgets
  * -----------------------------------------------------------------------------
  */
 .widget ul { list-style: none; }
 .widget-title {
-    background: url('./img/ees_grfx_logo_tiny.png') no-repeat scroll 0px 2px;
-    padding-left: 18px;
+    /*background: url('./img/ees_grfx_logo_tiny.png') no-repeat scroll 0px 2px;
+    padding-left: 18px;*/
     line-height: 1.1em !important;
-    margin-top: 1.8rem !important;
+    margin-top: 2.2rem !important;
     margin-bottom: 1.8rem !important;
 }
 /* Column Classes for Display Post Shortcode */

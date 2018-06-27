@@ -14,12 +14,7 @@
 
 get_header(); ?>
     <a id="primary-dd"></a>
-    <div class="large-8 medium-12 show-for-medium-up columns">
-        <div class="sponsor small-12">
-            <a href="http://madico.com" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_page_headline.png">
-            </a>
-        </div>
+    <div class="large-8 medium-12 show-for-medium-up columns catgory-list">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" class="post post-border" role="article">
                 <div class="site-content row">
@@ -56,10 +51,10 @@ get_header(); ?>
                                 ?>
                                 <a href="<?php the_permalink() ?>" rel="bookmark"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_btn_readmore.png"></a>
                             </span>
-                            <h5><a href="http://madico.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_madlogo_sm.png"></a> &nbsp; Sponsored by Madico Window Films</h5>
+                            <!--<h5><a href="http://madico.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_madlogo_sm.png"></a> &nbsp; Sponsored by Madico Window Films</h5>
                             <span class="sub-text">
-                                <?php do_action( 'sm_dlr_text' ); ?>
-                            </span>
+                                <?php //do_action( 'sm_dlr_text' ); ?>
+                            </span>-->
                         </div>
                     </section>
                 </div>
@@ -67,8 +62,8 @@ get_header(); ?>
         <?php endwhile; ?>
 
             <div id="popular-stories" class="clearfix">
-                <h3 class="widget-title">Popular Stories</h3>
-                <?php echo do_shortcode('[display-posts columns="2" image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="comment_count"]');?>
+                <!--<h3 class="widget-title">Popular Stories</h3>-->
+                <?php //echo do_shortcode('[display-posts columns="2" image_size="thumbnail" include_date="true" date_format="M j, Y" orderby="comment_count"]');?>
             </div>
 
         <?php else : ?>

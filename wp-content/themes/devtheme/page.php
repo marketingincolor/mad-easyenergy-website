@@ -20,11 +20,6 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <div class="sponsor small-12">
-                        <a href="http://madico.com" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_page_headline.png">
-                        </a>
-                    </div>
                     <header class="entry-header">
                         <?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
                             <?php the_post_thumbnail(); ?>

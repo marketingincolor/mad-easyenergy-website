@@ -50,7 +50,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="bgnd">
         <div class="row">
             <div id="site-title" class="large-6 medium-6  show-for-medium-up columns">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_hdr_grfx_logo.png"></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_hdr_grfx_logo_new.png"></a>
             </div>
             <div id="social-container" class="large-6 medium-6 columns show-for-medium-up">
                 <?php do_action( 'social_icons', 'header' ); ?>

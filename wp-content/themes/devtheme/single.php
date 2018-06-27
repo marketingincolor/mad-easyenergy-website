@@ -15,11 +15,6 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <div class="sponsor small-12">
-                        <a href="http://madico.com" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_page_headline.png">
-                        </a>
-                    </div>
                     <header class="entry-header">
                         <?php if ( ! post_password_required() && ! is_attachment() ) :
                             the_post_thumbnail( 'full' );
@@ -36,7 +31,7 @@ get_header(); ?>
                                 <img class="icon" src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_ico_comm.png">
                                 <a href="<?php comments_link(); ?> "><?php comments_number( 'no comments', '1 comment', '% comments' ); ?></a>
                             </span>
-                            <h5><a href="http://madico.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_madlogo_sm.png"></a> &nbsp; Sponsored by Madico Window Films</h5>
+                            <!--<h5><a href="http://madico.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/ees_grfx_madlogo_sm.png"></a> &nbsp; Sponsored by Madico Window Films</h5>-->
 
                             <div class="show-for-medium-down" style="margin-top:10px;">
                                 <?php dd_twitter_generate('Compact','twitter_username') ?>
@@ -47,7 +42,7 @@ get_header(); ?>
                             </div>
 
                             <span class="sub-text" style="display:inline-block; margin-top:10px;">
-                                <?php do_action( 'sm_dlr_text' ); ?>
+                                <?php //do_action( 'sm_dlr_text' ); ?>
                             </span>
                         </div>
                         <h2 class="entry-title"><?php the_title(); ?></h2>
